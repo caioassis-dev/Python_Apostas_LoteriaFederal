@@ -1,0 +1,32 @@
+
+
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(125, 74, 128,0.65);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.spinner-border {
+    margin-top: 20px;
+}
+
+
+.input-numero{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.btn-center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/jogosLoteria.css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Números mais sorteados</title>
+</head>
+<body>
+    <div class="container mt-4 ">
+
+        <h1 class="text-center mt-4 mb-4">Quais dezenas da LOTOFÁCIL são mais sorteadas?</h1>
+        <p class="text-center">Digite no campo abaixo o número de sorteios que você deseja receber a quantidade de dezenas que mais foram sorteadas.</p>
+        
+        <div class="input-numero">
+            <div class="form-group">
+                <input type="text" class="form-control" id="entradaValor" placeholder="Qtd sorteios anteriores">
+            </div>
+        </div>
+
+        
+        <div class="btn-center">
+            <button type="button" class="btn btn-dark" id="btnSortear" onclick="capturarClick()">Sortear</button>
+        </div>
+        
+        <button class="btn-spinner btn-dark" id="btn-spinner" type="button"  style="display: none;">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Loading...
+        </button>
+
+        <h2 class="dezenasSorteadas text-center mt-4" id="dezenSorteadas" style="display: none;">Dezenas mais sorteadas: </h2>
+        <h3 class="numSorteados text-center mt-4" id="sorteios"></h3>
+
+        
+    </div>
+    
+    
+</body>
+<script src="../static/js/jogosLoteria.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
